@@ -16,15 +16,15 @@ Learn how to develop and incorporate networking features into your DirectX game.
 
 A variety of networking features can be used in your DirectX game, whether it is a simple standalone game to massively multi-player games. The simplest use of networking would be to store user names and game scores on a central network server.
 
-Networking APIs are needed in multi-player games that use the infrastructure (client-server or internet peer-to-peer) model and also by ad hoc (local peer-to-peer) games. For server-based multi-player games, a central game server usually handles most of the game operations and the client game app is used for input, displaying graphics, playing audio, and other features. The speed and latency of network transfers is a concern for a satisfactory game experience.
+Networking APIs are needed in multi-player games that use the infrastructure model (client-server or internet peer-to-peer) and also the ad-hoc model (local peer-to-peer). For server-based multi-player games, a central game server usually handles most of the game operations and the client game app is used for input, displaying graphics, playing audio, and other features. The speed and latency of network transfers is a concern for a satisfactory game experience.
 
-For peer-to-peer games, each player's app handles the input and graphics. In most cases, the game players are located in close proximity so that network latency should be lower but is still a concern. How to discovery peers and establish a connection becomes a concern.
+For peer-to-peer games, each player's app handles the input and graphics. In most cases, the game players are located in close proximity so that network latency should be lower but is still a concern. Discovering peers and establishing a connection becomes a concern.
 
-For single-player games, a central Web server or service is often used to store user names, game scores, and other miscellaneous information. In these games, the speed and latency of networking transfers is less of a concern since it doesn't directly affect game operation.
+For single-player games, a central Web server or service is often used to store player names, game scores, and other miscellaneous information. In these games, the speed and latency of networking transfers is less of a concern as it doesn't directly affect game operation.
 
-Network conditions can change at any time, so any game that uses networking APIs needs to handle network exceptions that may occur. To learn more about handling network exceptions, see [Networking basics](../networking/networking-basics.md).
+Network conditions can change at any time, so any game that uses a networking API needs to handle network exceptions that occur. To learn more about handling network exceptions, see [Networking basics](../networking/networking-basics.md).
 
-Firewalls and web proxies are common and can affect the ability to use networking features. A game that uses networking needs to be prepared to properly handle firewalls and proxies.
+Firewalls and web proxies are common and will affect the ability to use networking features. A game that uses networking needs to be prepared to properly handle firewalls and proxies.
 
 For mobile devices, it is important to monitor available network resources and behave accordingly when on metered networks where roaming or data costs can be significant.
 
